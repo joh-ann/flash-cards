@@ -2,6 +2,7 @@ const { evaluateGuess } = require('../src/guess');
 
 const takeTurn = (guess, roundObj) => {
   roundObj.turns += 1;
+
   let guessResult = evaluateGuess(guess, roundObj.currentCard);
   let feedback;
 
@@ -11,16 +12,20 @@ const takeTurn = (guess, roundObj) => {
   } else {
     feedback = giveFeedback(guess, 'correct');
   }
-  roundObj.currentCardIndex += 1; // move to next card
-  roundObj.currentCard = roundObj.deck[roundObj.currentCardIndex] // update current card
+  
+  // move to next card
+  roundObj.currentCardIndex += 1;
+  // update current card
+  roundObj.currentCard = roundObj.deck[roundObj.currentCardIndex]
+
   return feedback;
 }
 
 const giveFeedback = (guess, result) => {
   if (result === 'incorrect') {
-    return `Your guess: ${guess} was wrong!`
+    return `Your guess "${guess}" was wrong!`
   } else {
-    return `Your guess: ${guess} was right!`
+    return `Your guess "${guess}" was right!`
   }
 }
 
@@ -31,8 +36,8 @@ const calculatePercentCorrect = (roundObj) => {
   return Math.floor(correctPercentage);
 }
 
-module.exports = {
-  takeTurn,
-  giveFeedback,
+module.exports = { 
+  takeTurn, 
+  giveFeedback, 
   calculatePercentCorrect
 }

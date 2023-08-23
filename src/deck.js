@@ -1,8 +1,8 @@
 const createDeck = (cardObjArr) => {
   let deck = {
-    deck: cardObjArr
+    cards: cardObjArr
   }
-  return deck.deck;
+  return deck.cards;
 }    
 
 const countCards = (deckObjArr) => {
