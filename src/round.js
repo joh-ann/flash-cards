@@ -25,7 +25,13 @@ const endRound = (roundObj) => {
   return `** Round over! ** You answered ${correctPercentage}% of the questions correctly!`
 }
 
+const endGame = (roundObj) => {
+  let correctPercentage = calculatePercentCorrect(roundObj);
+  return `** Game over! ** You answered ${correctPercentage}% of the questions correctly! Thanks for playing!`
+}
+
 module.exports = {
   createRound,
-  endRound
+  endRound,
+  endGame
 }

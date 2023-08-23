@@ -42,14 +42,14 @@ describe('turn', function() {
   });
 
   it('should give feedback for correct guess', function() {
-    const correctFeedback = giveFeedback('sea otter', 'correct')
+    const correctFeedback = giveFeedback('correct')
     const result = takeTurn('sea otter', round);
 
     expect(result).to.equal(correctFeedback);
   });
 
   it('should give feedback for incorrect guess', function() {
-    const correctFeedback = giveFeedback('pug', 'incorrect')
+    const correctFeedback = giveFeedback('incorrect')
     const result = takeTurn('pug', round);
 
     expect(result).to.equal(correctFeedback);

@@ -8,9 +8,9 @@ const takeTurn = (guess, roundObj) => {
 
   if (guessResult === 'incorrect') {
     roundObj.incorrectGuesses.push(roundObj.currentCard.id);
-    feedback = giveFeedback(guess, 'incorrect');
+    feedback = giveFeedback('incorrect');
   } else {
-    feedback = giveFeedback(guess, 'correct');
+    feedback = giveFeedback('correct');
   }
   
   // move to next card
@@ -21,11 +21,11 @@ const takeTurn = (guess, roundObj) => {
   return feedback;
 }
 
-const giveFeedback = (guess, result) => {
+const giveFeedback = (result) => {
   if (result === 'incorrect') {
-    return `Your guess "${guess}" was wrong!`
+    return `incorrect!`
   } else {
-    return `Your guess "${guess}" was right!`
+    return `correct!`
   }
 }
 
