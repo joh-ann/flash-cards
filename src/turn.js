@@ -34,7 +34,7 @@ const calculatePercentCorrect = (roundObj) => {
   let totalGuesses = roundObj.turns;
   let correctGuesses = (roundObj.turns - roundObj.incorrectGuesses.length);
   let correctPercentage = (correctGuesses / totalGuesses) * 100;
-  return Math.floor(correctPercentage);
+  return Math.round(correctPercentage);
 }
 
 module.exports = { 
