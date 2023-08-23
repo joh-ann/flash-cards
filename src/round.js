@@ -1,6 +1,5 @@
 const { calculatePercentCorrect } = require('../src/turn');
 
-
 const createRound = (
   deck, 
   currentCardIndex = 0, 
