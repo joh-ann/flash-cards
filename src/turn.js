@@ -1,6 +1,7 @@
 const { evaluateGuess } = require('../src/guess');
 
 const takeTurn = (guess, roundObj) => {
+  // increment turn
   roundObj.turns += 1;
 
   let guessResult = evaluateGuess(guess, roundObj.currentCard);
