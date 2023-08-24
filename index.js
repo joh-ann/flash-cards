@@ -1,10 +1,10 @@
 console.log('Your project is running...'); 
 
-const { prototypeData } = require('./src/data.js');
-const { createCard} = require('./src/card.js');
-const { createDeck } = require('./src/deck.js');
-const { createRound } = require('./src/round.js');
-const { printMessage, printQuestion } = require('./src/game.js');
+const { prototypeData } = require('./src/data');
+const { createCard} = require('./src/card');
+const { createDeck } = require('./src/deck');
+const { createRound } = require('./src/round');
+const { printMessage, printQuestion } = require('./src/game');
 
 const start = () => {
   const cards = prototypeData.map((card) => {
