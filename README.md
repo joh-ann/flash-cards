@@ -8,7 +8,7 @@ This is a command-line flash card game where users can test their JavaScript pro
 ![flashcards](https://github.com/joh-ann/flashcards-starter/assets/126308696/e5c980fb-9de0-4b07-bf1d-f6e7724720db)
 
 #### Technologies used: 
-GitHub, Terminal, VS Code, JavaScript
+GitHub, Terminal, VS Code, JavaScript, Mocha, Chai
 
 #### Resources used: 
 MDN Documents, Google, Turing School Project Rubric & Notes
