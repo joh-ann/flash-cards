@@ -1,11 +1,15 @@
+<div align="center">
+  
 # Flash Cards
+
+</div>
 
 ### Overview
 
 A command-line flash card game testing your JavaScript prototype method knowledge. Answer questions, receive instant feedback on correct answers, and see your final score.
 
 ### Preview
-<img src="https://github.com/joh-ann/flashcards-starter/assets/126308696/e5c980fb-9de0-4b07-bf1d-f6e7724720db" width="300">
+<img src="https://github.com/joh-ann/flashcards-starter/assets/126308696/e5c980fb-9de0-4b07-bf1d-f6e7724720db" width="600">
 
 ### Tech Stack
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
